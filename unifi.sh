@@ -20,8 +20,7 @@ JSVC_OPTS="
   -classpath /usr/share/java/commons-daemon.jar:${BASEDIR}/lib/ace.jar
   -pidfile ${PIDFILE}
   -procname unifi
-  -outfile ${LOGDIR}/unifi.out.log
-  -errfile ${LOGDIR}/unifi.err.log
+  -outfile &1 -errfile &2
   ${JVM_OPTS}"
 
 # One issue might be no cron and lograte, causing the log volume to
